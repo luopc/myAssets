@@ -1,8 +1,8 @@
-package com.luopc.framework.common.utils;
+package com.framework.common.utils;
 
 
 import com.common.webUtil.ProPsUtil;
-import com.luopc.framework.common.ConfigConstant;
+import com.framework.common.ConfigConstant;
 
 import java.util.Properties;
 

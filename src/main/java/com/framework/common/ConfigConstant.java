@@ -1,8 +1,8 @@
-package com.luopc.framework.common;
+package com.framework.common;
 
 public interface ConfigConstant {
 
-    String CONFIG_FILE = "spring_web.properties";
+    String CONFIG_FILE = "framework_web.properties";
 
     String JDBC_DRIVER = "jdbc.driver";
     String JDBC_URL = "jdbc.url";

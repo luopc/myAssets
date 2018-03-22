@@ -1,4 +1,4 @@
-package com.luopc.framework.common.utils;
+package com.framework.common.utils;
 
 import com.common.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
