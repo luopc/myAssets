@@ -1,42 +1,42 @@
 package com.common.util;
 
-import org.apache.commons.lang.StringUtils;
+/**
+ * 转型操作工具类
+ *
+ * @author huangyong
+ * @since 1.0.0
+ */
+public final class CastUtil {
 
-public class CastUtil {
-
-    public static String castString(Object object) {
-        return CastUtil.castString(object, "");
+    /**
+     * 转为 String 型
+     */
+    public static String castString(Object obj) {
+        return CastUtil.castString(obj, "");
     }
 
     /**
-     * 把一个其他类型转化为字符串，如果类型为空，那么为默认值。
-     *
-     * @param object
-     * @param defaultValue
-     * @return
+     * 转为 String 型（提供默认值）
      */
-    public static String castString(Object object, String defaultValue) {
-        return object != null ? String.valueOf(object) : defaultValue;
+    public static String castString(Object obj, String defaultValue) {
+        return obj != null ? String.valueOf(obj) : defaultValue;
     }
 
     /**
-     * 转化为double
-     * 1、先转为string
-     * 2、在转化为double
-     * 3、如果出现异常，把转化结果指定为默认值。
-     *
-     * @param object
-     * @return
+     * 转为 double 型
      */
-    public static double castDouble(Object object) {
-        return CastUtil.castDouble(object, 0);
+    public static double castDouble(Object obj) {
+        return CastUtil.castDouble(obj, 0);
     }
 
-    public static double castDouble(Object object, double defaultValue) {
+    /**
+     * 转为 double 型（提供默认值）
+     */
+    public static double castDouble(Object obj, double defaultValue) {
         double doubleValue = defaultValue;
-        if (object != null) {
-            String strValue = castString(object);
-            if (StringUtils.isNotEmpty(strValue)) {
+        if (obj != null) {
+            String strValue = castString(obj);
+            if (StringUtil.isNotEmpty(strValue)) {
                 try {
                     doubleValue = Double.parseDouble(strValue);
                 } catch (NumberFormatException e) {
@@ -47,15 +47,21 @@ public class CastUtil {
         return doubleValue;
     }
 
-    public static long castLong(Object object) {
-        return CastUtil.castLong(object, 0);
+    /**
+     * 转为 long 型
+     */
+    public static long castLong(Object obj) {
+        return CastUtil.castLong(obj, 0);
     }
 
-    public static long castLong(Object object, long defaultValue) {
+    /**
+     * 转为 long 型（提供默认值）
+     */
+    public static long castLong(Object obj, long defaultValue) {
         long longValue = defaultValue;
-        if (object != null) {
-            String strValue = castString(object);
-            if (StringUtils.isNotEmpty(strValue)) {
+        if (obj != null) {
+            String strValue = castString(obj);
+            if (StringUtil.isNotEmpty(strValue)) {
                 try {
                     longValue = Long.parseLong(strValue);
                 } catch (NumberFormatException e) {
@@ -66,15 +72,21 @@ public class CastUtil {
         return longValue;
     }
 
-    public static int castInt(Object object) {
-        return CastUtil.castInt(object, 0);
+    /**
+     * 转为 int 型
+     */
+    public static int castInt(Object obj) {
+        return CastUtil.castInt(obj, 0);
     }
 
-    public static int castInt(Object object, int defaultValue) {
+    /**
+     * 转为 int 型（提供默认值）
+     */
+    public static int castInt(Object obj, int defaultValue) {
         int intValue = defaultValue;
-        if (object != null) {
-            String strValue = castString(object);
-            if (StringUtils.isNotEmpty(strValue)) {
+        if (obj != null) {
+            String strValue = castString(obj);
+            if (StringUtil.isNotEmpty(strValue)) {
                 try {
                     intValue = Integer.parseInt(strValue);
                 } catch (NumberFormatException e) {
@@ -85,14 +97,20 @@ public class CastUtil {
         return intValue;
     }
 
-    public static boolean castBoolean(Object object) {
-        return CastUtil.castBoolean(object, false);
+    /**
+     * 转为 boolean 型
+     */
+    public static boolean castBoolean(Object obj) {
+        return CastUtil.castBoolean(obj, false);
     }
 
-    public static boolean castBoolean(Object object, boolean defaultValue) {
+    /**
+     * 转为 boolean 型（提供默认值）
+     */
+    public static boolean castBoolean(Object obj, boolean defaultValue) {
         boolean booleanValue = defaultValue;
-        if (object != null) {
-            booleanValue = Boolean.parseBoolean(castString(object));
+        if (obj != null) {
+            booleanValue = Boolean.parseBoolean(castString(obj));
         }
         return booleanValue;
     }

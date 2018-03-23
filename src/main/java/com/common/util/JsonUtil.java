@@ -1,4 +1,4 @@
-package org.smart4j.framework.util;
+package com.common.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

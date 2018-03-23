@@ -1,4 +1,4 @@
-package org.smart4j.framework.util;
+package com.common.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

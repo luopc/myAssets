@@ -1,10 +1,11 @@
-package org.smart4j.framework.util;
+package com.common.util;
 
-import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.File;
 
 /**
  * 文件操作工具类

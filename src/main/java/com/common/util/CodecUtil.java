@@ -1,4 +1,4 @@
-package org.smart4j.framework.util;
+package com.common.util;
 
 import java.net.URLDecoder;
 import java.net.URLEncoder;
