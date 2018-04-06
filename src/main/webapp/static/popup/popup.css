@@ -1,0 +1,39 @@
+/*------- Prompt Style -------*/
+.popup_prompt{border:1px solid #909090;background:#FFF;}
+.popup_prompt .popup_header{}
+.popup_prompt h1{height:25px;margin:1px;font-size:13px;color:#F4793A;font-weight:bold;text-indent:10px;padding-top:7px;}
+.popup_prompt .popup_content{margin:1px;padding:10px;font-size:13px;}
+.popup_prompt .buttonRow{height:30px;line-height:30px;text-align:right;margin:1px;}
+.popup_prompt input{color:#555;border:1px solid #808080;margin-right:5px;height:20px;line-height:18px;padding:0px 3px;}
+/*------- Tip Style -------*/
+.popup_tip{border:1px #684E02 solid;vertical-align:middle;filter:Alpha(Opacity=80);-moz-opacity:0.8;z-index:9999;}
+.popup_tip .popup_content{color:#000;background:#FCFBE0;text-align:center;}
+.popup_tip img{vertical-align:middle;}
+/*------- Help Style -------*/
+.popup_help_up,.popup_help_down{width:200px;filter:Alpha(Opacity=85);z-index:9999;}
+.popup_help_up{background:url(images/help_t1.gif) left top no-repeat;}
+.popup_help_down{background:url(images/help_t2.gif) left top no-repeat;}
+.popup_help_up a:link,.popup_help_down a:link{text-decoration:underline;}
+.popup_help_up .popup_header{margin-top:9px;}
+.popup_help_down .popup_header{margin-top:22px;}
+.popup_help_up .popup_header,.popup_help_down .popup_header{height:18px;border-left:1px #000 solid;border-right:1px #000 solid;background:#FFFFE1;}
+.popup_help_up .popup_header h1,.popup_help_down .popup_header h1{font-size:13px;text-indent:28px;background:url(images/action.gif) 10px 0px no-repeat;}
+.popup_help_up .popup_content,.popup_help_down .popup_content{line-height:16px;padding:5px 10px;border-left:1px #000 solid;border-right:1px #000 solid;background:#FFFFE1;}
+.popup_help_up .popup_bottom{height:22px;background:url(images/help_b1.gif) left top no-repeat;}
+.popup_help_down .popup_bottom{height:9px;background:url(images/help_b2.gif) left top no-repeat;}
+/*------- error Style -------*/
+.popup_error_up,.popup_error_down{width:200px;filter:Alpha(Opacity=85);z-index:9999;}
+.popup_error_up{background:url(images/help_t1.gif) left top no-repeat;}
+.popup_error_down{background:url(images/help_t2.gif) left top no-repeat;}
+.popup_error_up a:link,.popup_error_down a:link{text-decoration:underline;}
+.popup_error_up .popup_header{margin-top:9px;}
+.popup_error_down .popup_header{margin-top:22px;}
+.popup_error_up .popup_header,.popup_error_down .popup_header{height:18px;border-left:1px #000 solid;border-right:1px #000 solid;background:#FFFFE1;}
+.popup_error_up .popup_header h1,.popup_error_down .popup_header h1{font-size:13px;text-indent:28px;background:url(images/error.gif) 10px 0px no-repeat;color:#FF0000;padding-left:2px;}
+.popup_error_up .popup_content,.popup_error_down .popup_content{line-height:16px;padding:5px 10px;border-left:1px #000 solid;border-right:1px #000 solid;background:#FFFFE1;}
+.popup_error_up .popup_bottom{height:22px;background:url(images/help_b1.gif) left top no-repeat;}
+.popup_error_down .popup_bottom{height:9px;background:url(images/help_b2.gif) left top no-repeat;}
+/*--------- model style ----------*/
+.popup_model{position:fixed !important;position:absolute;top:0;left:0;height:100%; width:100%; z-index:9999; background:#000 center center; opacity:0.6; filter:alpha(opacity=60);font-size:14px;line-height:20px;}
+.popup_model #popup_model_content{top:0;left:0;height:800px; width:100%; z-index:9999; background:#000 url(images/load.gif) no-repeat center 200px; font-size:18px;line-height:30px;}
+.popup_model #popup_model_content p{color:#fff;position:relative; top:30%; margin-top:20px; padding:3px 10px;width:100%;text-align:center;}

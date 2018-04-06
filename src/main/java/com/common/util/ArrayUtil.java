@@ -1,6 +1,6 @@
 package com.common.util;
 
-import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang.ArrayUtils;
 
 /**
  * 数组工具类

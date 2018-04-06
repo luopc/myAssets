@@ -4,7 +4,8 @@ import com.common.util.CollectionUtil;
 import com.common.util.StringUtil;
 import com.common.webUtil.ProPsUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.dbcp2.BasicDataSource;
+
+import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;

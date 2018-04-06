@@ -1,0 +1,56 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+html ,body{
+	background-color: #45aeff;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.prompt_info {
+	height: 345px;
+	width: 520px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -475px;
+	margin-top: -245px;
+}
+.prompt_info_phone {
+	background-image: url(../images/prompt-phone.png);
+	background-repeat: no-repeat;
+	height: 42px;
+	width: 499px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-family: "微软雅黑", "宋体";
+	font-size: 24px;
+	padding-top: 7px;
+	color: #F3EB50;
+	letter-spacing: 1px;
+}
+.prompt_info_phone img {
+	margin-right: 10px;
+}
+.prompt_info_bottom {
+	background-image: url(../images/bottom-bg.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 33px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	padding-top: 13px;
+}
+.prompt_info_bottom a {
+	text-decoration: none;
+	font-family: "微软雅黑", "宋体";
+	font-size: 14px;
+	color: #FFF;
+}
